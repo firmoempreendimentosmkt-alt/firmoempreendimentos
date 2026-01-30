@@ -7,9 +7,9 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Firmo Empreendimentos | Construção Civil em Blumenau",
+  title: "Firmo Empreendimentos | Munique Lofts - Pomerode, SC",
   description:
-    "Construtora especializada em empreendimentos modernos e sustentáveis em Blumenau e Pomerode, SC. Mais de 30 projetos entregues com qualidade e pontualidade.",
+    "Firmo Empreendimentos - Especialistas em construção de lofts inteligentes desde 2019. Conheça o Munique Lofts em Pomerode, SC. Plantas de 24,75m² a 31,78m² com vaga de garagem.",
   generator: "v0.app",
 }
 

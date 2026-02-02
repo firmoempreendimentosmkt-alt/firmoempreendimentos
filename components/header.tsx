@@ -4,15 +4,26 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
+      const currentScrollY = window.scrollY
+      
+      // Esconde o header quando rola para baixo, mostra quando rola para cima
+      if (currentScrollY > 100) {
+        setIsVisible(false)
+      } else {
+        setIsVisible(true)
+      }
+      
+      setLastScrollY(currentScrollY)
     }
-    window.addEventListener("scroll", handleScroll)
+    
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [lastScrollY])
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -23,51 +34,53 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-md" : "bg-white/90 backdrop-blur-sm"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
+        isVisible 
+          ? "opacity-100 translate-y-0" 
+          : "opacity-0 -translate-y-full pointer-events-none"
+      } bg-white/95 backdrop-blur-sm shadow-sm`}
     >
       <div className="container mx-auto px-4">
-        {/* Logo centralizada */}
-        <div className="flex justify-center py-4">
+        {/* Logo centralizada - menor no mobile */}
+        <div className="flex justify-center py-3 md:py-4">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20firmo%20empreendimentos%20OFC-1-rZInwqhomaXQR1nfkzVXn1i7lRhfH7.png"
             alt="Firmo Empreendimentos"
             width={280}
             height={90}
-            className="h-32 w-auto"
+            className="h-20 md:h-28 w-auto"
           />
         </div>
 
-        {/* Navigation bar abaixo da logo */}
-        <nav className="flex items-center justify-center gap-8 pb-4 border-t border-border/30 pt-3">
+        {/* Navigation bar - scroll horizontal no mobile */}
+        <nav className="flex items-center justify-start md:justify-center gap-4 md:gap-8 pb-3 md:pb-4 border-t border-border/30 pt-2 md:pt-3 overflow-x-auto scrollbar-hide">
           <button
             onClick={() => scrollToSection("inicio")}
-            className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+            className="text-xs md:text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap flex-shrink-0"
           >
             Início
           </button>
           <button
             onClick={() => scrollToSection("sobre")}
-            className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+            className="text-xs md:text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap flex-shrink-0"
           >
-            Sobre Nós
+            Sobre
           </button>
           <button
             onClick={() => scrollToSection("projetos")}
-            className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+            className="text-xs md:text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap flex-shrink-0"
           >
             Projetos
           </button>
           <button
             onClick={() => scrollToSection("localizacao")}
-            className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+            className="text-xs md:text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap flex-shrink-0"
           >
-            Localização
+            Local
           </button>
           <button
             onClick={() => scrollToSection("contato")}
-            className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+            className="text-xs md:text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap flex-shrink-0"
           >
             Contato
           </button>

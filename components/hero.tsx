@@ -13,7 +13,7 @@ export function Hero() {
   }
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -29,22 +29,22 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance uppercase tracking-wide" style={{ color: "#1a2332", fontFamily: "var(--font-montserrat)", letterSpacing: "0.05em" }}>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 text-balance uppercase tracking-wide px-2" style={{ color: "#1a2332", fontFamily: "var(--font-montserrat)", letterSpacing: "0.05em" }}>
             Construindo o futuro mantendo a tradição
           </h1>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-white"
+              className="bg-primary hover:bg-primary/90 text-white text-sm md:text-base"
               onClick={() => scrollToSection("projetos")}
             >
               Conheça Nossos Projetos
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20"
+              className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20 text-sm md:text-base"
               onClick={() => scrollToSection("contato")}
             >
               Entre em Contato

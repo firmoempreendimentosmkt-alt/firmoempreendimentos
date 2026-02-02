@@ -16,16 +16,16 @@ export function Projects() {
       title: "Duo Residence",
       location: "Blumenau, SC",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8590.PNG-DAEP1Ow2cpFUnztNYwkHNnJmlscTPM.jpeg",
-      status: "Entregue",
+      status: "Projeto Futuro",
       description: "Casa contemporânea com design moderno e integração com natureza",
     },
     {
-      title: "Green Garden - Vista Lateral",
-      location: "Pomerode, SC",
+      title: "Munique",
+      location: "Blumenau, SC",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RENDER%2003%20FINAL-dC5CeD26CdJP5EijqdIin4VnddzCPh.jpg",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RENDER%2002%20FINAL%20%288%29-F2QW6Rm9y2ZSq6VVeuaMHiAU94Rg6A.jpg",
       status: "Em Construção",
-      description: "Arquitetura integrada com a natureza",
+      description: "Edifício com arquitetura germânica, tijolos aparentes e detalhes em madeira",
     },
   ]
 

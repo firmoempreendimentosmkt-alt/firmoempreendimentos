@@ -29,7 +29,7 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance uppercase tracking-wide" style={{ color: "#1a2332", fontFamily: "'Montserrat', sans-serif", letterSpacing: "0.05em" }}>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance uppercase tracking-wide" style={{ color: "#1a2332", fontFamily: "var(--font-montserrat)", letterSpacing: "0.05em" }}>
             Construindo o futuro mantendo a tradição
           </h1>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

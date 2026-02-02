@@ -52,8 +52,8 @@ export function Header() {
           />
         </div>
 
-        {/* Navigation bar - scroll horizontal no mobile */}
-        <nav className="flex items-center justify-start md:justify-center gap-4 md:gap-8 pb-3 md:pb-4 border-t border-border/30 pt-2 md:pt-3 overflow-x-auto scrollbar-hide">
+        {/* Navigation bar - centralizada */}
+        <nav className="flex items-center justify-center gap-4 md:gap-8 pb-3 md:pb-4 border-t border-border/30 pt-2 md:pt-3 overflow-x-auto scrollbar-hide">
           <button
             onClick={() => scrollToSection("inicio")}
             className="text-xs md:text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider whitespace-nowrap flex-shrink-0"

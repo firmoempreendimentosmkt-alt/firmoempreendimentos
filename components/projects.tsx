@@ -24,7 +24,7 @@ export function Projects() {
       location: "Blumenau, SC",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RENDER%2002%20FINAL%20%288%29-F2QW6Rm9y2ZSq6VVeuaMHiAU94Rg6A.jpg",
-      status: "Em Construção",
+      status: "Em Breve",
       description: "Edifício com arquitetura germânica, tijolos aparentes e detalhes em madeira",
     },
   ]
@@ -90,43 +90,6 @@ export function Projects() {
           ))}
         </div>
 
-        {/* Interior Renders */}
-        <div className="mt-12 md:mt-16 max-w-3xl mx-auto text-center mb-6 md:mb-8">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Interiores Modernos</h3>
-          <p className="text-base md:text-lg text-muted-foreground text-pretty">
-            Lofts e apartamentos com design contemporâneo e funcional
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
-          <Card className="overflow-hidden">
-            <div className="relative h-64 md:h-96">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RENDER%2008%20FINAL-1z29UP7XU2u5skTOMOfy3XYJk7Gxua.jpg"
-                alt="Interior Loft com Mezanino"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <CardContent className="p-4 md:p-6">
-              <h4 className="text-base md:text-lg font-bold">Loft com Mezanino</h4>
-              <p className="text-xs md:text-sm text-muted-foreground">Design moderno com pé-direito duplo</p>
-            </CardContent>
-          </Card>
-          <Card className="overflow-hidden">
-            <div className="relative h-64 md:h-96">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RENDER%2006%20FINAL-boOINkwmcyR4MWU6zIMl8WhCeQ7H55.jpg"
-                alt="Studio Integrado"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <CardContent className="p-4 md:p-6">
-              <h4 className="text-base md:text-lg font-bold">Studio Integrado</h4>
-              <p className="text-xs md:text-sm text-muted-foreground">Espaços otimizados e funcionais</p>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   )

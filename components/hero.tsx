@@ -13,14 +13,14 @@ export function Hero() {
   }
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative md:min-h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-secondary">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RENDER%2004%20FINAL-P0NVuNHO7CSEfpKWUwDo0ZERytVQqC.jpg"
           alt="Empreendimento Firmo"
           fill
-          className="object-contain object-center"
+          className="object-cover object-center"
           priority
           sizes="100vw"
         />

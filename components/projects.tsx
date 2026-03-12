@@ -22,7 +22,7 @@ export function Projects() {
     {
       title: "Munique Lofts",
       location: "Pomerode, SC",
-      image: "/munique-lofts.png",
+      image: "/munique-lofts-hero.jpg",
       status: "Lançamento",
       description: "Lofts modernos no centro de Pomerode com arquitetura enxaimel contemporânea",
     },

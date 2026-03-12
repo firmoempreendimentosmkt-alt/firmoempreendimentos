@@ -22,7 +22,7 @@ export function Projects() {
     {
       title: "Munique Lofts",
       location: "Pomerode, SC",
-      image: "/munique-lofts.jpg",
+      image: "/munique-lofts.png",
       status: "Lançamento",
       description: "Lofts modernos no centro de Pomerode com arquitetura enxaimel contemporânea",
     },
@@ -80,7 +80,7 @@ export function Projects() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="relative h-[520px] rounded-xl overflow-hidden shadow-2xl">
               <Image
-                src="/munique-lofts.jpg"
+                src="/munique-lofts.png"
                 alt="Munique Lofts - Pomerode SC"
                 fill
                 className="object-cover"

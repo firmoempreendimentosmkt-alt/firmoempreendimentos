@@ -45,7 +45,7 @@ export function About() {
             <Card key={index} className="border-none shadow-lg">
               <CardContent className="p-6 text-center">
                 <stat.icon className="h-10 w-10 mx-auto mb-4 text-primary" />
-                <div className="text-3xl font-bold text-secondary mb-2">{stat.value}</div>
+                <div className="text-3xl font-bold mb-2" style={{ color: "#e07b20" }}>{stat.value}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </CardContent>
             </Card>

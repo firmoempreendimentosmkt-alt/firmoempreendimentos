@@ -16,16 +16,15 @@ export function Projects() {
       title: "Duo Residence",
       location: "Blumenau, SC",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8590.PNG-DAEP1Ow2cpFUnztNYwkHNnJmlscTPM.jpeg",
-      status: "Entregue",
+      status: "Projeto Futuro",
       description: "Casa contemporânea com design moderno e integração com natureza",
     },
     {
-      title: "Green Garden - Vista Lateral",
+      title: "Munique Lofts",
       location: "Pomerode, SC",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RENDER%2003%20FINAL-dC5CeD26CdJP5EijqdIin4VnddzCPh.jpg",
-      status: "Em Construção",
-      description: "Arquitetura integrada com a natureza",
+      image: "/munique-lofts.jpg",
+      status: "Lançamento",
+      description: "Lofts modernos no centro de Pomerode com arquitetura enxaimel contemporânea",
     },
   ]
 
@@ -74,6 +73,69 @@ export function Projects() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Munique Lofts Detail */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="relative h-[520px] rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/munique-lofts.jpg"
+                alt="Munique Lofts - Pomerode SC"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-5">
+              <div>
+                <span className="text-xs uppercase tracking-widest font-semibold" style={{ color: "#e07b20" }}>
+                  Novo Empreendimento
+                </span>
+                <h3
+                  className="text-4xl font-bold mt-2 mb-1"
+                  style={{ fontFamily: "var(--font-playfair), 'Georgia', serif" }}
+                >
+                  Munique Lofts
+                </h3>
+                <p className="text-muted-foreground text-sm tracking-wide">Centro · Pomerode, SC</p>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                O Munique Lofts é um empreendimento exclusivo localizado no coração de Pomerode, a cidade mais alemã do
+                Brasil. Com arquitetura que dialoga com o patrimônio cultural da região, o projeto oferece lofts
+                modernos e funcionais com acabamentos de alto padrão.
+              </p>
+              <ul className="space-y-2">
+                {[
+                  "Lofts com mezanino e pé-direito duplo",
+                  "Localização privilegiada no centro da cidade",
+                  "Varandas com jardins verticais",
+                  "Infraestrutura completa para sustentabilidade",
+                  "Arquitetura enxaimel contemporânea",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-sm">
+                    <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "#e07b20" }} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex gap-4 pt-2">
+                <div className="text-center">
+                  <div className="text-2xl font-bold" style={{ color: "#e07b20" }}>4</div>
+                  <div className="text-xs text-muted-foreground">Andares</div>
+                </div>
+                <div className="w-px bg-border" />
+                <div className="text-center">
+                  <div className="text-2xl font-bold" style={{ color: "#e07b20" }}>Lofts</div>
+                  <div className="text-xs text-muted-foreground">Exclusivos</div>
+                </div>
+                <div className="w-px bg-border" />
+                <div className="text-center">
+                  <div className="text-2xl font-bold" style={{ color: "#e07b20" }}>Centro</div>
+                  <div className="text-xs text-muted-foreground">Pomerode SC</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Completed Projects Gallery */}

@@ -15,16 +15,16 @@ export function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-secondary">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RENDER%2004%20FINAL-P0NVuNHO7CSEfpKWUwDo0ZERytVQqC.jpg"
           alt="Empreendimento Firmo"
           fill
-          className="object-cover"
+          className="object-contain object-center"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 via-secondary/60 to-secondary/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-secondary/70 via-secondary/50 to-secondary/70" />
       </div>
 
       {/* Content */}

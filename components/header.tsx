@@ -34,41 +34,35 @@ export function Header() {
           alt="Firmo Empreendimentos"
           width={240}
           height={80}
-          className="h-20 w-auto"
+          className="h-16 sm:h-20 w-auto"
         />
       </div>
 
       {/* Navigation row */}
-      <nav className="flex items-center justify-center gap-10 py-3">
+      <nav className="flex items-center justify-center gap-4 sm:gap-10 py-2 sm:py-3 overflow-x-auto">
         <button
           onClick={() => scrollToSection("inicio")}
-          className="text-sm font-medium hover:text-primary transition-colors"
+          className="text-xs sm:text-sm font-medium whitespace-nowrap hover:text-primary transition-colors"
         >
           Início
         </button>
         <button
           onClick={() => scrollToSection("sobre")}
-          className="text-sm font-medium hover:text-primary transition-colors"
+          className="text-xs sm:text-sm font-medium whitespace-nowrap hover:text-primary transition-colors"
         >
           Sobre Nós
         </button>
         <button
           onClick={() => scrollToSection("projetos")}
-          className="text-sm font-medium hover:text-primary transition-colors"
+          className="text-xs sm:text-sm font-medium whitespace-nowrap hover:text-primary transition-colors"
         >
           Projetos
         </button>
         <button
           onClick={() => scrollToSection("localizacao")}
-          className="text-sm font-medium hover:text-primary transition-colors"
+          className="text-xs sm:text-sm font-medium whitespace-nowrap hover:text-primary transition-colors"
         >
           Localização
-        </button>
-        <button
-          onClick={() => scrollToSection("contato")}
-          className="text-sm font-medium bg-primary text-primary-foreground px-4 py-1.5 rounded-md hover:bg-primary/90 transition-colors"
-        >
-          Contato
         </button>
       </nav>
     </header>

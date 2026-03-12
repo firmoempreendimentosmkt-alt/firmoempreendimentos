@@ -7,11 +7,11 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export default function Home() {
-  // Updated layout with centered logo and visible navigation
   return (
     <main className="min-h-screen bg-background">
       <Header />
-      <div className="pt-[148px]">
+      {/* pt accounts for fixed header: logo (~64px mobile / 80px desktop) + nav (~36px) + border */}
+      <div className="pt-[108px] sm:pt-[132px]">
         <Hero />
         <About />
         <Projects />
